@@ -1,0 +1,54 @@
+%\documentclass[a4paper,10pt]{report}
+%\usepackage{lmodern}% http://ctan.org/pkg/lm 
+%\usepackage[spanish]{babel} %espaniol
+%\usepackage[latin1]{inputenc} %acentos sin codigo
+%\usepackage{graphicx} 
+%\topmargin=3cm
+
+%\begin{document}
+
+
+\begin{titlepage}
+
+
+\begin{center}
+    {\fontsize{35}{35} \selectfont
+    Anteproyecto: \\
+    Sistema de Tarjetas de fidelizacion de clientes. \\[1.3cm] }
+\end{center}
+
+
+\begin{center}
+    \LARGE Universidad Nacional de Salta \\
+    \begin{figure}[h]
+        \begin{center}
+        \includegraphics[scale=0.5]{resourse/logo-UNSa.jpg}
+        \end{center}
+    \end{figure}
+
+    
+    \LARGE Facultad de Ciencias Exactas \\
+    Seminario de Sistemas \\ [1.3cm]
+\end{center}
+
+
+\begin{flushright}
+    {\Large 
+    Alumno: Ricardo Daniel Quiroga \\
+    L.U.: 212.625 \\
+    Director: Mg. Gustavo Daniel Gil \\
+    Numero de Actuacion: 1013/14
+    \\[1.0cm]
+    \textbf{ Intengrantes Comision Evaluadora } \\
+    Lic. Adriana Binda \\
+    Lic. Loraine Gimson \\
+    Lic. Martin Diaz \\
+    }
+    
+\end{flushright}
+
+
+
+\end{titlepage}
+
+
