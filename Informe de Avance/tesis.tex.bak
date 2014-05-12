@@ -1,4 +1,4 @@
-\documentclass[10pt,fleqn,twoside]{book}
+\documentclass[10pt,fleqn,twoside,openany]{book}
 \topmargin=3cm
 
 %cambiar fuente defecto
@@ -17,6 +17,10 @@
 \usepackage{float}
 
 \usepackage{color}
+
+%tablas
+%no funciona
+%\usepackage{multirow, array} 
 
 \definecolor{lightgray}{rgb}{0.83,0.83,0.83}
 \definecolor{darkgray}{gray}{0.40}
@@ -69,23 +73,23 @@
 
 % Code for creating empty pages
 % No headers on empty pages before new chapter
-\makeatletter
-\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
-    \hbox{}
-    \thispagestyle{plain}
-    \newpage
-    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\makeatother \clearpage{\pagestyle{plain}\cleardoublepage}
+%\makeatletter
+%\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+%    \hbox{}
+%    \thispagestyle{plain}
+%    \newpage
+%    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+%\makeatother \clearpage{\pagestyle{plain}\cleardoublepage}
 
 % Code for creating fully-empty pages
 % Fully empty pages before command is called
-\makeatletter
-\def\clearfullypage{\clearpage\if@twoside \ifodd\c@page\else
-    \hbox{}
-    \thispagestyle{empty}
-    \newpage
-    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\makeatother \clearpage{\pagestyle{empty}\clearfullypage}
+%\makeatletter
+%\def\clearfullypage{\clearpage\if@twoside \ifodd\c@page\else
+%    \hbox{}
+%    \thispagestyle{empty}
+%    \newpage
+%    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+%\makeatother \clearpage{\pagestyle{empty}\clearfullypage}
 
 % Dutch style of paragraph formatting, i.e. no indents.
 \setlength{\parskip}{1.3ex plus 0.2ex minus 0.2ex}
@@ -169,7 +173,7 @@
 %\ input{portada} %Se compila aparte y se junta con "gs".
 %gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=tesiscompleta.pdf -dBATCH portada.pdf tesis.pdf
 \pagestyle{empty}
-\clearfullypage
+%\clearfullypage
 
 
 % Define pagestyle
@@ -236,7 +240,7 @@
 \include{investigacion_desarrollo}
 
 
-% \include{bibliografia}
+%\include{bibliografia}
 
 %\part*{\addcontentsline{toc}{part}{Apéndices}Apéndices}
 
@@ -264,7 +268,7 @@
 %\bibliographystyle{plain}
 %\bibliography{biblio.bib}
 
-\include{bibligrafia}
+\include{bibliografia}
 
 \end{document}
 
